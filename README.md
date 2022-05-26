@@ -15,7 +15,7 @@ var easyinput = new EasyAddress('#address-area', { // << 도로명 주소검색�
         apikey: "apike", //도로명 주소api => 주소검색api > apikey
        
         event :{ 
-            selectevent : function(address){ //선택 되었을때의 도로명주소
+            selectevent : function(address){ //사용자가 도로명을 선택(클릭 , 엔터) 하였을때 address = 선택한 주소
                 console.log(address)
             }
 
