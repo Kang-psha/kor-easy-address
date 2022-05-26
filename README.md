@@ -16,7 +16,7 @@
 var easyinput = new EasyAddress('#address-area', { // << 도로명 주소검색이 필요한 곳의 id
         
         apikey: "apikey", //도로명 주소api => 주소검색api > 해당 apikey
-       
+        searchamount: 20, //검색할 주소 갯수 최소값5 최대값 ?
         event :{ 
             selectevent : function(address){ //사용자가 도로명을 선택(클릭 , 엔터) 하였을때 address = 선택한 주소
                 console.log(address)
@@ -41,7 +41,7 @@ startsWith: => 사용자가 선택했는지(클릭을,엔터를)   : boolean
 ```
 ###### 상세 설명
 ___
-도로명 주소 검색 api를 가져와 div id만 입력하면 쉽게 dropdown으로 주소목록을 보고 선택할수있음.
+도로명 주소 검색 api를 가져와 div id와 apikey 입력하면 쉽게 dropdown으로 주소목록을 보고 선택할수있음.
 
 도로명 주소입력 방법
 > 2글자 이상으로 입력하기만 하면됩니다
