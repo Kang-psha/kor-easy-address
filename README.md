@@ -12,7 +12,7 @@
 ```javascript
 var easyinput = new EasyAddress('#address-area', { // << 도로명 주소검색이 필요한 곳의 id
         
-        apikey: "apike", //도로명 주소api => 주소검색api > apikey
+        apikey: "apikey", //도로명 주소api => 주소검색api > 해당 apikey
        
         event :{ 
             selectevent : function(address){ //사용자가 도로명을 선택(클릭 , 엔터) 하였을때 address = 선택한 주소
