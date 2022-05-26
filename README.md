@@ -41,7 +41,17 @@ startsWith: => 사용자가 선택했는지(클릭을,엔터를)   : boolean
 ```
 ###### 상세 설명
 ___
-가나다라
+도로명 주소 검색 api를 가져와 div id만 입력하면 쉽게 dropdown으로 주소목록을 보고 선택할수있음.
+
+도로명 주소입력 방법
+> 2글자 이상으로 입력하기만 하면됩니다
+
+상하 이동 방법
+> 상(방향키 상)  / 하(방향키 하, tap)
+> 마우스 휠 , 드래그 
+
+선택방법
+> 마우스 클릭 , 상하이동후 엔터
 ___
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FKang-psha%2Fkor-easy-address&count_bg=%2379C83D&title_bg=%23848484&icon=&icon_color=%23E7E7E7&title=git&edge_flat=false)](https://hits.seeyoufarm.com)
