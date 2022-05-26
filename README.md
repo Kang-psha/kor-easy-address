@@ -19,16 +19,14 @@
 ##### 도로명 주소 검색(javascript) [[도로명주소 api 발급 link]](https://www.juso.go.kr/addrlink/devAddrLinkRequestWrite.do?returnFn=write&cntcMenu=URL)
 ```javascript
 var easyinput = new EasyAddress('#address-area', { // << 도로명 주소검색이 필요한 곳의 id
-        //도로명 주소 api https://www.juso.go.kr/addrlink/devAddrLinkRequestWrite.do?returnFn=write&cntcMenu=URL
+
         apikey: "apikey", //도로명 주소api => 주소검색api > 해당 apikey
         searchamount: 20, //검색할 주소 개수 최소값5 최대값 ?
         event :{ 
             selectevent : function(address){ //사용자가 도로명을 선택(클릭 , 엔터) 하였을때 address = 선택한 주소
                 console.log(address)
             }
-
         }
-
 })
 ```
 ##### input안에 있는 값 가져오기
@@ -45,10 +43,7 @@ startsWith: => 사용자가 선택했는지(클릭을,엔터를)   : boolean
 */
 ```
 ###### 상세 설명___
-
-
 도로명 주소 검색 api를 가져와 div id와 apikey 입력하면 쉽게 dropdown으로 주소목록을 보고 선택할수있습니다.
-
 
 도로명 주소입력 방법
 > 2글자 이상으로 입력하기만 하면됩니다
