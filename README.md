@@ -24,7 +24,7 @@ var easyinput = new EasyAddress('#address-area', { // << 도로명 주소검색�
 })
 ```
 input안에 있는 값 가져오기
-```
+```javascript
 easyinput.getinputdata()
 /*
 result 
