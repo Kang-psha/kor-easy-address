@@ -15,8 +15,8 @@
 
 </div>
 ```
-###### [도로명주소 api 발급 link](https://www.juso.go.kr/addrlink/devAddrLinkRequestWrite.do?returnFn=write&cntcMenu=URL)
-##### 도로명 주소 검색(javascript)
+
+##### 도로명 주소 검색(javascript) ###### [도로명주소 api 발급 link](https://www.juso.go.kr/addrlink/devAddrLinkRequestWrite.do?returnFn=write&cntcMenu=URL)
 ```javascript
 var easyinput = new EasyAddress('#address-area', { // << 도로명 주소검색이 필요한 곳의 id
         //도로명 주소 api https://www.juso.go.kr/addrlink/devAddrLinkRequestWrite.do?returnFn=write&cntcMenu=URL
