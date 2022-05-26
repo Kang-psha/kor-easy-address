@@ -6,7 +6,7 @@
 ##### 도로명 주소 검색(html)
 ```html
 
-<script type="text/javascript" src="/easy-address.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Kang-psha/kor-easy-address/easy-address/easy-address.js"></script>
 <link rel="stylesheet" type="text/css" href="/easy-address.css">
 <!-- 최소한의 css -->
 
