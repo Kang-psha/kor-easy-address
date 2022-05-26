@@ -1,0 +1,76 @@
+#address-area {
+    margin: 100px;
+}
+#address-area2 {
+    margin: 100px;
+}
+
+.psha-input {
+    width: 400px;
+    margin-bottom: 5px;
+}
+
+.psha-dropdown {
+    width: 400px;
+    min-height: 200px;
+    max-height: 200px;
+    position: absolute;
+    border: solid 1px;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: auto;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 5px 0px;
+    scroll-margin: 0;
+
+}
+
+.psha-dropdown.closed {
+    display: none;
+}
+
+.psha-dropdown-data {
+    scroll-snap-align: start;
+    padding-bottom: 5px;
+    border-bottom: 1px solid;
+    cursor: pointer;
+    width: 400px;
+}
+.psha-dropdown-data.focused{
+    background-color: bisque;
+    scroll-snap-align: start;
+}
+.psha-dropdown-data:hover {
+    background-color: bisque;
+}
+
+.psha-dropdown-data.keyhover {
+    background-color: bisque;
+}
+
+.psha-dropdown.scroll::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+.psha-dropdown::-webkit-scrollbar {
+    background: #e4edfc;
+    width: 8px;
+    display: block;
+    transition: all 0.5s;
+}
+.psha-dropdown::-webkit-scrollbar-track {
+    background: #e4edfc;
+    display: block;
+    transition: all 0.5s;
+}
+.psha-dropdown::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #a8bdf4;
+    display: block;
+    transition: all 0.5s;
+}
