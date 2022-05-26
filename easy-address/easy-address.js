@@ -264,11 +264,7 @@ var EasyAddress = function (areaid, option) {
             overword : inputdata.replace(selectdata , "")
         }
     }
-   
-    
 }
-
-
 window.onload = function () {
     drwa_address();
 }
