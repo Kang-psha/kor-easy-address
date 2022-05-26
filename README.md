@@ -5,6 +5,11 @@
 
 ##### 도로명 주소 검색(html)
 ```html
+
+<script type="text/javascript" src="/easy-address.js"></script>
+<link rel="stylesheet" type="text/css" href="/easy-address.css">
+<!-- 최소한의 css -->
+
 <!-- 도로명 주소검색이 필요한 곳 -->
 <div id = "address-area">
 
