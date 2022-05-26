@@ -265,40 +265,7 @@ var EasyAddress = function (areaid, option) {
         }
     }
 }
-window.onload = function () {
-    drwa_address();
-}
 
-function drwa_address() {
-
-    var easyinput = new EasyAddress('#address-area', {
-
-        apikey: "devU01TX0FVVEgyMDIyMDUxOTE3MTQ0MzExMjU5MDU=",
-       
-        event :{
-            selectevent : function(address){
-                console.log(address)
-            }
-
-        }
-
-    })
-    
-    var easyinput2 = new EasyAddress('#address-area2', {
-
-        apikey: "devU01TX0FVVEgyMDIyMDUxOTE3MTQ0MzExMjU5MDU=",
-        searchamount: 20,
-    })
-
-    window.addEventListener("keyup",function(e){
-    
-        if(e.key == "ArrowLeft"){
-            console.log(easyinput.getinputdata());
-        }
-        
-    })
-
-}
 
 
 
