@@ -19,7 +19,7 @@
 ##### 도로명 주소 검색(javascript)
 ```javascript
 var easyinput = new EasyAddress('#address-area', { // << 도로명 주소검색이 필요한 곳의 id
-        
+        //도로명 주소 api https://www.juso.go.kr/addrlink/devAddrLinkRequestWrite.do?returnFn=write&cntcMenu=URL
         apikey: "apikey", //도로명 주소api => 주소검색api > 해당 apikey
         searchamount: 20, //검색할 주소 개수 최소값5 최대값 ?
         event :{ 
