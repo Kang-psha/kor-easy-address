@@ -27,8 +27,6 @@ var EasyAddress = function (areaid, option) {
     })
 
     input.addEventListener("focusout", function (e) {
-    // input.addEventListener("focusout", function (e) {
-       
         
         presskeyword = "";
    
@@ -48,7 +46,7 @@ var EasyAddress = function (areaid, option) {
     var max_curser_count = 0;
     input.addEventListener("keyup", function (e) {
     
-        if (e.key == "ArrowDown" || e.key == "Tab") { //아래로
+        if (e.key == "ArrowDown" || e.key == "Tab") {
            
             curser_count++
             if (curser_count >= max_curser_count) {
@@ -58,7 +56,7 @@ var EasyAddress = function (areaid, option) {
                 focuse_address_data(curser_count);
             }
             return false
-        } else if (e.key == "ArrowUp") { //위로
+        } else if (e.key == "ArrowUp") { 
             curser_count--
             if (curser_count < 0) {
                 curser_count = max_curser_count - 1;
@@ -67,8 +65,6 @@ var EasyAddress = function (areaid, option) {
                 focuse_address_data(curser_count);
             }
 
-            // $($('.search_address_data')[curser_count]).attr("tabindex", -1).hover()
-           
             e.preventDefault = false
             return false
 
@@ -125,9 +121,6 @@ var EasyAddress = function (areaid, option) {
     var presskeyword = ""
 
     function getaddress(apikey, keyword, countPerPage) {
-
-    
-        
         if(!(keyword.startsWith(donetext))){
             donetext = "";
         }
@@ -138,7 +131,7 @@ var EasyAddress = function (areaid, option) {
                 presskeyword = keyword;
                 
                 url = "https://www.juso.go.kr/addrlink/addrLinkApi.do?keyword=" + keyword + "&confmKey=" + apikey + "&resultType=json&"
-                console.log(countPerPage);
+
                 if(countPerPage > 5){
                     url += "countPerPage=" +countPerPage
                 }else{
@@ -156,16 +149,11 @@ var EasyAddress = function (areaid, option) {
                     deletechileall(dropdownarea);
                     innerdata(data.results.juso)
                 }).catch(excResp => {
-                    // console.log(excResp)
+                    
                 })
             }
            
         }
-        
-
-
-
-
 
     }
     var selectmousedown = false
@@ -214,7 +202,6 @@ var EasyAddress = function (areaid, option) {
         }
         
     }
-    // document.getElementById(areaid).innerHTML=""
 
     function deletechileall(parents) {
         while (parents.hasChildNodes()) {
@@ -248,7 +235,7 @@ var EasyAddress = function (areaid, option) {
            
             dropdownarea.scrollBy(0, tobottom + 2);
         }
-        // console.log("div높이는 " , dropdowndata.clientHeight);
+
       
         dataarr[num].classList.add("focused");
     }
@@ -282,8 +269,6 @@ var EasyAddress = function (areaid, option) {
 }
 
 
-
-// used
 window.onload = function () {
     drwa_address();
 }
@@ -293,8 +278,7 @@ function drwa_address() {
     var easyinput = new EasyAddress('#address-area', {
 
         apikey: "devU01TX0FVVEgyMDIyMDUxOTE3MTQ0MzExMjU5MDU=",
-        // searchamount: 4,
-
+       
         event :{
             selectevent : function(address){
                 console.log(address)
@@ -308,20 +292,6 @@ function drwa_address() {
 
         apikey: "devU01TX0FVVEgyMDIyMDUxOTE3MTQ0MzExMjU5MDU=",
         searchamount: 20,
-
-        // keyevent: {
-        //     downkey : function(){
-        //     },
-        //     upkey : function(){
-        //     },
-        //     tapkey : function(){
-        //     },
-        //     enterkey : function(){
-        //     }
-        // }
-
-
-
     })
 
     window.addEventListener("keyup",function(e){
