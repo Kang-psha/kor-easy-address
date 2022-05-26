@@ -1,6 +1,13 @@
 # kor-easy-address
 
-사용
+도로명 주소(html)
+
+```html
+<div id = "address-area">
+
+</div>
+```
+
 
 ```javascript
 var easyinput = new EasyAddress('#address-area', {
