@@ -16,7 +16,7 @@
 var easyinput = new EasyAddress('#address-area', { // << 도로명 주소검색이 필요한 곳의 id
         
         apikey: "apikey", //도로명 주소api => 주소검색api > 해당 apikey
-        searchamount: 20, //검색할 주소 갯수 최소값5 최대값 ?
+        searchamount: 20, //검색할 주소 개수 최소값5 최대값 ?
         event :{ 
             selectevent : function(address){ //사용자가 도로명을 선택(클릭 , 엔터) 하였을때 address = 선택한 주소
                 console.log(address)
