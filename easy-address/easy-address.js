@@ -132,7 +132,7 @@ var EasyAddress = function (areaid, option) {
 
             if (keyword != presskeyword) {
                 presskeyword = keyword;
-                console.log(donetext)
+                
                 url = "https://www.juso.go.kr/addrlink/addrLinkApi.do?keyword=" + keyword + "&confmKey=" + apikey + "&resultType=json&"
 
                 if (countPerPage > 5) {
@@ -151,7 +151,8 @@ var EasyAddress = function (areaid, option) {
 
                     deletechileall(dropdownarea);
                     innerdata(data.results.juso)
-                    console.log(data.results.juso)
+                    
+                    
                 }).catch(excResp => {
 
                 })
@@ -319,7 +320,8 @@ var EasyAddress = function (areaid, option) {
 
                             }
                         }else{
-                            console.log("dd?")
+                           
+                            
                             option.event.selectevent(data[i].roadAddr);
                             input.value = data[i].roadAddr + " ";
                             donetext = data[i].roadAddr + " ";
@@ -414,7 +416,7 @@ function drwa_address() {
 
     var easyinput = new EasyAddress('#address-area', {
 
-        apikey: "devU01TX0FVVEgyMDIyMDUxOTE3MTQ0MzExMjU5MDU=",
+        apikey: "(apikey)",
         searchamount: 20,
 
         selectjuso :"engAddr" , //default, null = roadAddr  (jibunAddr , roadAddr , engAddr , zipNo)
