@@ -74,3 +74,14 @@
     display: block;
     transition: all 0.5s;
 }
+.jusoarea{
+    margin-bottom: 10px;
+}
+
+.jusotext {
+    font-size: 17px;
+}
+
+.jusoaddr {
+    font-size: 11px;
+}
