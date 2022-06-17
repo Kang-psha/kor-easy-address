@@ -23,14 +23,16 @@ var easyinput = new EasyAddress('#address-area', {
         apikey: "(apikey)",
         searchamount: 20,
 
+        //사용자 선택시 input태그에 쓰일 주소                
         selectjuso :"engAddr" , //default, null = roadAddr  (jibunAddr , roadAddr , engAddr , zipNo)
+        
         event: {
             selectevent: function (address) {
                 console.log(address)
             }
-
         },
         
+        //주소 검색시 출력 여부 주소,지번(true or false) 출력할 주소앞 문구(text).
         jibun: {
             view: true, //default,null =  true
             text : "지번주소"//default,null =  "지번주소"
