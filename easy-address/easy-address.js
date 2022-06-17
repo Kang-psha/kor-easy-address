@@ -293,9 +293,6 @@ var EasyAddress = function (areaid, option) {
 
                     if (selectmousedown) {
 
-                       
-                        
-
                         if(typeof option.selectjuso != "undefined"){
                             if(option.selectjuso == "jibinAddr"){
 
@@ -377,7 +374,6 @@ var EasyAddress = function (areaid, option) {
         dataarr[num].classList.add("focused");
     }
 
-
     this.getinputdata = function () {
         var startsWith = false;
         var inputdata = input.value;
@@ -401,9 +397,6 @@ var EasyAddress = function (areaid, option) {
             overword: inputdata.replace(selectdata, "")
         }
     }
-
-
-    
 }
 
 
