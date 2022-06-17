@@ -18,16 +18,43 @@
 
 ##### 도로명 주소 검색(javascript) [[도로명주소 api 발급 link]](https://www.juso.go.kr/addrlink/devAddrLinkRequestWrite.do?returnFn=write&cntcMenu=URL)
 ```javascript
-var easyinput = new EasyAddress('#address-area', { // << 도로명 주소검색이 필요한 곳의 id
+var easyinput = new EasyAddress('#address-area', {
 
-        apikey: "apikey", //도로명 주소api => 주소검색api > 해당 apikey
-        searchamount: 20, //검색할 주소 개수 최소값5 최대값 ?
-        event :{ 
-            selectevent : function(address){ //사용자가 도로명을 선택(클릭 , 엔터) 하였을때 address = 선택한 주소
+        apikey: "(apikey)",
+        searchamount: 20,
+
+        selectjuso :"engAddr" , //default, null = roadAddr  (jibunAddr , roadAddr , engAddr , zipNo)
+        event: {
+            selectevent: function (address) {
                 console.log(address)
             }
+
+        },
+        
+        jibun: {
+            view: true, //default,null =  true
+            text : "지번주소"//default,null =  "지번주소"
+        },
+
+        road: {
+            view: true, //default,null =  true
+            text : "도로명" //default,null =  "도로명"
+        },
+
+        eng: {
+            view: true,//default,null =  true
+            text: "영문주소"//default,null =  "영문주소"
+
+        },
+
+        zipNo: {
+            view: true, //default,null =  true
+            text: "우편번호" //default,null =  "우편번호"
         }
-})
+
+
+
+    })
 ```
 ##### input안에 있는 값 가져오기
 ```javascript
