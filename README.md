@@ -20,13 +20,13 @@
 ```javascript
 var easyinput = new EasyAddress('#address-area', {
 
-        apikey: "(apikey)",
-        searchamount: 20,
+        apikey: "(apikey)", //도로명주소 도로명주소검색apikey
+        searchamount: 20, //한번에 출력할 개수
 
         //사용자 선택시 input태그에 쓰일 주소                
         selectjuso :"engAddr" , //default, null = roadAddr  (jibunAddr , roadAddr , engAddr , zipNo)
         
-        event: {
+        event: { //사용자가 선택시 선택한 주소 출력.
             selectevent: function (address) {
                 console.log(address)
             }
